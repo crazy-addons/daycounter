@@ -5,11 +5,11 @@ plugins {
 
 val versions = providers.gradleProperty("net.labymod.minecraft-versions").get().split(";")
 
-group = "org.example"
+group = "net.crazy"
 version = providers.environmentVariable("VERSION").getOrElse("1.0.0")
 
 labyMod {
-    defaultPackageName = "org.example" //change this to your main package name (used by all modules)
+    defaultPackageName = "net.crazy.daycounter"
 
     minecraft {
         registerVersion(versions.toTypedArray()) {
@@ -23,10 +23,10 @@ labyMod {
     }
 
     addonInfo {
-        namespace = "example"
-        displayName = "ExampleAddon"
-        author = "Example Author"
-        description = "Example Description"
+        namespace = "daycounter"
+        displayName = "Day Counter"
+        author = "cs-jako"
+        description = "A simple and vanilly friendly Day Counter. Perfect for SMPs"
         minecraftVersion = "*"
         version = rootProject.version.toString()
     }
