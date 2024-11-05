@@ -28,7 +28,7 @@ public class TickListener {
         }
 
         ClientWorld world = addon.labyAPI().minecraft().clientWorld();
-        if (world == null || world.getPlayerCount() == 0) {
+        if (world == null || !addon.labyAPI().minecraft().isIngame()) {
             return;
         }
 
