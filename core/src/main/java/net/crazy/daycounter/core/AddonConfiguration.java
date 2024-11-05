@@ -14,11 +14,14 @@ public class AddonConfiguration extends AddonConfig {
   @SwitchSetting
   private final ConfigProperty<Boolean> enabled = new ConfigProperty<>(true);
 
+  @SwitchSetting
+  public final ConfigProperty<Boolean> startAtOne = new ConfigProperty<>(true);
+
   @DropdownSetting
   public final ConfigProperty<AnnounceTime> time = new ConfigProperty<>(AnnounceTime.MORNING);
 
   @DropdownSetting
-  public final ConfigProperty<AnnounceChannel> channel = new ConfigProperty<>(AnnounceChannel.ACTIONBAR_TYPED);
+  public final ConfigProperty<AnnounceChannel> channel = new ConfigProperty<>(AnnounceChannel.TYPED);
 
   @SwitchSetting
   public final ConfigProperty<Boolean> withSound = new ConfigProperty<>(true);
