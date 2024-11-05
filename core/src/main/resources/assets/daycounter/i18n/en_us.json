@@ -1,9 +1,36 @@
 {
-  "daycounter": {
-    "settings": {
-      "enabled": {
-        "name": "Enabled"
-      }
+    "daycounter": {
+        "settings": {
+            "enabled": {
+                "name": "Enabled"
+            },
+            "startAtOne": {
+                "name": "Start at Day 1",
+                "description": "Minecraft itself starts counting at 0, if enabled the first day will be day 1."
+            },
+            "time": {
+                "name": "Time",
+                "description": "In-game Time when the announcement should be displayed",
+                "entries": {
+                    "morning": "Morning (6AM)",
+                    "midnight": "Midnight (12AM)"
+                }
+            },
+            "channel": {
+                "name": "Notification Type",
+                "description": "Where and how the announcement should be displayed",
+                "entries": {
+                    "actionbar": "ActionBar",
+                    "typed": "ActionBar (Animated)",
+                    "notification": "Notification"
+                }
+            },
+            "withSound": {
+                "name": "Sound"
+            }
+        },
+        "messages":{
+            "day": "Day"
+        }
     }
-  }
 }
