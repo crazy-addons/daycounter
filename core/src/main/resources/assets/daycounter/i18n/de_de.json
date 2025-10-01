@@ -5,8 +5,27 @@
                 "name": "Aktiviert"
             },
             "startAtOne": {
-                "name": "Beginn bei Tag 1"
+                "name": "Beginn bei Tag 1",
+                "description": "Minecraft zählt ab Tag 0, wenn aktiviert beginnt das addon bei 1 an zu zählen."
+            },
+            "time": {
+                "name": "Uhrzeit",
+                "description": "Wann das Announcement angezeigt werden soll",
+                "entries": {
+                    "morning": "Morgens (6AM)",
+                    "midnight": "Mitternachts (12AM)"
+                }
+            },
+            "channel": {
+                "name": "Notification Typ",
+                "description": "Wo und wie das Announcement angezeigt werden soll"
+            },
+            "withSound": {
+                "name": "Sound"
             }
+        },
+        "messages": {
+            "day": "Tag"
         }
     }
 }
